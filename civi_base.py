@@ -1,3 +1,5 @@
+protocol_s = "http://"  ## https:// for production site...
+
 with open("../civi_base_URL",mode='r') as f:
     base_URL = f.readline().rstrip()
 with open("../civi_site_key",mode='r') as f:
