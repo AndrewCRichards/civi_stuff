@@ -27,12 +27,12 @@ class TestMethods(unittest.TestCase):
 
     def test_get_contact_upload_params(self): 
 
-       output = {
-           'entity': 'Contact', 'action': 'create', 'api_key': civi_base.api_key, 
-           'key': civi_base.site_key, 'json': json.dumps(self.contactOutput)
-       }
+        output = {
+            'entity': 'Contact', 'action': 'create', 'api_key': civi_base.api_key, 
+            'key': civi_base.site_key, 'json': json.dumps(self.contactOutput)
+        }
 
-       self.assertEqual(url_writer.get_contact_upload_params(self.contactInput), output)
+        self.assertEqual(url_writer.get_contact_upload_params(self.contactInput), output)
 
 
 
